@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #141E30;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+
+  .logo{
+    display: flex;
+    align-items: center;
+    margin-right: 70rem;
+}
+
+.logo .Mp{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.logo p{
+    font-size: 1.55rem;
+    color: white;
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+.logo p .for-dark{
+   opacity: 0; 
+}
+.logo span{
+    color: #db1912;
+    font-size: 1.55rem;
+    margin-top: 2px;
+    font-weight: bold;
+} 
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav a:hover,
+  nav a.active{
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(31, 69, 150);
+}
+  
+  main {
+    margin: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #141E30;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  

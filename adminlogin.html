@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      
+      <link rel="shortcut icon" href="images/Kw.png" type="">
+      <title>KW Fashion</title>
+      
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      
+      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      
+      <link href="css/style.css" rel="stylesheet" />
+      
+      <link href="css/responsive.css" rel="stylesheet" />
+   </head>
+   <body class="sub_page">
+      <div class="hero_area">
+         <!-- header section strats -->
+         <header class="header_section">
+            <div class="container">
+               <nav class="navbar navbar-expand-lg custom_nav-container ">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </header>
+         <!-- end header section -->
+      </div>
+      <!-- inner page section -->
+      <section class="inner_page_head">
+         <div class="container_fuild">
+            <div class="row">
+               <div class="col-md-12">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end inner page section -->
+      <!-- why section -->
+      <section class="why_section layout_padding">
+         <div class="form-modal">
+    
+            <div class="form-toggle">
+                <button id="login-toggle" onclick="toggleLogin()">log in</button>
+                <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+            </div>
+        
+            <div id="login-form">
+                <form action="adminlogin.php" method="post">
+                    <input type="text" name ="email" placeholder="Enter email or username" id="email"/>
+                    <input type="password" name ="password" placeholder="Enter password" id="password"/>
+                    <button type="submit"  class="btn login" id="loginsubmit">login</button>
+                    <p><a href="javascript:void(0)">Forgotten account</a></p>
+                    <hr/>
+        
+                </form>
+            </div>
+        
+            <div id="signup-form">
+                <form action="adminregister.php" method="post">
+                    <input type="email" name ="email" placeholder="Enter your email" id="email"/>
+                    <input type="text"  name ="fname" placeholder="Enter your first name" id="first_name"/>
+                    <input type="text"  name ="lname" placeholder="Enter your last name" id="last_name"/>
+                    <input type="password"  name ="password" placeholder="Create password" id="password"/>
+                    <button type="submit"  class="btn signup" id="submit">create account</button>
+                    <p>Clicking <strong>create account</strong> means that you are agree to our <a href="javascript:void(0)">terms of services</a>.</p>
+                    <hr/>
+                   
+                </form>
+            </div>
+        
+        </div>
+        
+      </section>
+      <!-- end why section -->
+
+      <div class="cpy_">
+         <p>© 2024 All Rights Reserved By KW Fashion</p>
+      </div>
+
+      <!-- jQery -->
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <!-- popper js -->
+      <script src="js/popper.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="js/bootstrap.js"></script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
+      
+   </body>
+</html>--

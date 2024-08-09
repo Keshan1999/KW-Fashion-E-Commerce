@@ -1,0 +1,167 @@
+/* styles.css */
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.account-container {
+    display: flex;
+    max-width: 1540px;
+    height: auto;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-naviga {
+    width: 250px;
+    background-color: #342de8;
+    color: #fff;
+    padding: 20px;
+}
+
+.account-naviga ul {
+    list-style: none;
+    padding: 0;
+}
+
+.account-naviga ul li {
+    margin: 15px 0;
+}
+
+.account-naviga ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.account-naviga ul li a:hover,
+.account-naviga ul li a.active {
+    text-decoration: underline;
+}
+
+.account-section {
+    display: none;
+    padding: 20px;
+    width: 100%;
+}
+
+.account-section.active {
+    display: block;
+}
+
+.account-section h2 {
+    border-bottom: 2px solid #342de8;
+    padding-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #342de8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #342de8;
+}
+
+.order {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.delete-account {
+    background-color: #e74c3c;
+    margin-top: 20px;
+}
+
+.delete-account:hover {
+    background-color: #c0392b;
+}
+
+.order-details-container {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-details-container .order-summary,
+.order-details-container .order-items,
+.order-details-container .order-total {
+    margin-bottom: 20px;
+}
+
+.order-details-container .order-summary h3,
+.order-details-container .order-items h3,
+.order-details-container .order-total h3 {
+    margin-bottom: 10px;
+}
+
+.order-details-container .order-summary p,
+.order-details-container .order-items p,
+.order-details-container .order-total p {
+    margin: 5px 0;
+}
+
+.order-details-container .order-items .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order-details-container .order-items .item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.order-details-container .order-items .item .item-details {
+    flex: 1;
+}
+
+.order-details-container .order-total p {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.btn.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.btn.back-btn:hover {
+    background-color: #555;
+}

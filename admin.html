@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <link rel="shortcut icon" href="admin/img/Kw.png" type="">
+        <title>KW Fashion</title>
+        <link rel="stylesheet" href="admin/css/dash.css ">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    </head>
+    <body>
+        <div id="mysidenav" class="sidenav">
+           
+           <a class="logo" href="index.html"><img width="100" src="images/Kw.png" alt="#" /></a>
+           <a href="dashboard.html" class="icon-a"><i class="fa fa-dashboard icons"></i>&nbsp; &nbsp;Dashboard</a>
+           <a href="adminproduct.php" class="icon-a"><i class="fa fa-product-hunt icons"></i>&nbsp; &nbsp;Products</a>
+           <a href="order.html" class="icon-a"><i class="fa fa-shopping-bag icons"></i>&nbsp; &nbsp;Orders</a>
+           <a href="addproduct.html" class="icon-a"><i class="fa fa-product-hunt icons"></i>&nbsp; &nbsp;Add New Product</a>
+           <a href="Accounts.html" class="icon-a"><i class="fa fa-user icons"></i>&nbsp; &nbsp;Account</a>
+
+        </div>
+        <div id="main">
+            <div class="head">
+                <div class="col-div-6">
+                    <span style="font-size: 30px; cursor: pointer; color: rgb(0, 0, 0);" class="nav"><i class="fa fa-bars icons"></i>&nbsp;Dashboard</span>
+                    <span style="font-size: 30px; cursor: pointer; color: rgb(0, 0, 0);" class="nav2">&nbsp;Dashboard</span>
+                </div> 
+                    <div class="col-div-6">
+                        
+                    
+                    <div class="profile">
+                        <img src="admin/img/profile.png" class="pro-img">
+                        <p>Admin<span>Logout</span></p>
+                    </div>
+                    </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-div-3">
+                <div class="box">
+                    <p>67<br><span>Total Products</span></p>
+                    <i class="fa fa-product-hunt icon"></i>
+                </div>
+
+            </div>
+            <div class="col-div-3">
+                <div class="box">
+                    <p>03<br><span>Total Category</span></p>
+                    <i class="fa fa-th icon"></i>
+                </div>
+
+            </div>
+            <div class="col-div-3">
+                <div class="box">
+                    <p>$ 206,890<br><span>Total Sales</span></p>
+                    <i class="fa fa-money icon"></i>
+                </div>
+
+            </div>
+            <div class="col-div-3">
+                <div class="box">
+                    <p>20<br><span>Paid Orders</span></p>
+                    <i class="fa fa-check icon"></i>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+            <br/><br/>
+
+            <div class="col-div-8">
+                <div class="box-8">
+                    <div class="content-box">
+                        <p>Top selling Products <button type="button" class="btn">View all</button></p>
+                        <br/>
+                        <table>
+                            <tr>
+                                <th>Item</th>
+                                <th>Price</th>
+                                <th>Sold </th>
+                            </tr>
+                            <tr>
+                                <td>white shirt</td>
+                                <td>$1580</td>
+                                <td>18</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-div-4">
+                <div class="box-4">
+                    <div class="content-box">
+                        <p>Total sale <button type="button" class="btn">View all</button></p>
+                        <div class="circle-wrap">
+                            <div class="circle">
+                                <div class="mask full">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="mask half">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="inside-circle">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+           $(".nav").click(function(){
+                $("#mysidenav").css('width','70px');
+                $("#main").css('margin-left','70px');
+                $(".logo").css('visibility','hidden');
+                $(".logo span").css('visibility','visible');
+                $(".logo span").css('margin-left','-10px');
+                $(".icon-a").css('visibility','hidden');
+                $(".icons").css('visibility','visible');
+                $(".icons").css('margin-left','-8px');
+                $(".nav").css('display','none');
+                $(".nav2").css('display','block');
+            });
+            $(".nav2").click(function(){
+                $("#mysidenav").css('width','300px');
+                $("#main").css('margin-left','300px');
+                $(".logo").css('visibility','visible');
+                $(".logo span").css('visibility','visible');
+                $(".icon-a").css('visibility','visible');
+                $(".icons").css('visibility','visible');
+                $(".nav").css('display','block');
+                $(".nav2").css('display','none');
+            });
+        </script>
+    </body>
+</html>

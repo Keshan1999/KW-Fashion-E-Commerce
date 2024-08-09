@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Products</title>
+    <link rel="stylesheet" href="admin/css/addproduct.css">
+
+</head>
+
+<body class="body">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="dashboard.html" class="logo">
+                        <div class="Mp">
+                            <a class="logo" href="index.html"><img width="100" src="images/Kw.png" alt="#" /></a>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product-listing">
+            <h1 class="product-listing__title">Edit Product</h1>
+            <form class="product-listing__form" action="#">
+                <div class="form-column">
+
+                    <div class="form-field">
+                        <label for="display-size">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="price">Price:</label>
+                        <input type="text" id="price" name="price" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" required></textarea>
+                    </div>
+                    <div class="form-field">
+                        <label for="photos">Photos:</label>
+                        <input type="file" id="photos" name="photos" multiple>
+                    </div>
+                </div>
+                <div class="form-column">
+                    <div class="form-field">
+                        <label for="category">Category:</label>
+                        <select id="category" name="Category">
+                            <option value="men">Men</option>
+                            <option value="women">Women</option>
+                            <option value="kids" selected>Kids</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="color">Color:</label><br>
+                        <select id="color" name="color">
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="silver">Red</option>
+                            <option value="gold">Gray</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="size">Size:</label><br>
+                        <input type="checkbox" id="size" name="size" value="S"> S
+                        <input type="checkbox" id="size" name="size" value="M"> M
+                        <input type="checkbox" id="size" name="size" value="L"> L
+                    </div>
+                    <div class="form-field">
+                        <label for="quantity">Quantity:</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1">
+                    </div>
+
+                </div>
+            </form>
+            <div class="form-field">
+                <button type="submit">Save</button>
+                <button type="cancel">cancel</button>
+            </div>
+        </section>
+    </main>
+    <script src="admin/js/adminproduct.js"></script>
+</body>
+
+</html>
